@@ -14,10 +14,9 @@ my_axes.set_xlabel("X Data")
 my_axes.set_ylabel("Y Data")
 my_axes.set_title("Graph Title")
 plt.show()
-
+my_figure.savefig("figure1.png", dpi=200)
 
 my_figure2 = plt.figure()
-
 
 my_axes3 = my_figure2.add_axes([0.1,0.1,0.9,0.9])
 my_axes3.plot(np_numpy1, np_numpy2,"r*-")
@@ -32,4 +31,6 @@ my_axes2.set_ylabel("Y Data Small")
 my_axes2.set_title("Small Graph")
 
 plt.show()
+
+my_figure2.savefig("figure2.png", dpi=200)
 
